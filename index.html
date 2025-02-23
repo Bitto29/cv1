@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basit Iqbal Bitto - CV1</title>
+    <title>Basit Iqbal Bitto - Portfolio</title>
     <style>
         /* Global Styling */
         * {
@@ -115,37 +115,92 @@
                 opacity: 1;
             }
         }
-        /* Responsive Design for Mobile */
-        @media (max-width: 768px) {
-            .container {
+        @media(max-width:768px){
+            .container{
                 padding: 20px;
             }
-            .container h1 {
+            .container h1{
                 font-size: 1.8rem;
             }
-            .container p {
-                font-size: 0.9rem;
+            .containerp{
+                font-size: 0.5rem;
             }
-            .profile-img {
+            .profile-img{
                 width: 80px;
                 height: 80px;
             }
-            .btn {
+            .btn{
                 font-size: 0.9rem;
-                padding: 10px;
+                padding:10px;
             }
-            }
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            left: 37px;
+            background: linear-gradient(145deg, #ff9f1c, #ff6f61);
+            color: #ffffff;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1000;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 111, 97, 0.6);
+        }
+
     </style>
 </head>
 <body>
+    <a class="floating-btn" href="https://bitto29.github.io/" target="_blank" aria-label="Visit My Portfolio">
+        Portfolio
+    </a>      
     <div class="container">
-        <img src="Profilepic.jpg" alt="Profile Picture" class="profile-img">
+        <img src="pp.jpg" alt="Profile Picture" class="profile-img">
         <h1>Basit Iqbal Bitto</h1>
         <p>Professional Web Developer & Prompt Engineer</p>
         <div class="button-container">
             <a class="btn" href="view-cv.html" target="_blank">View My CV</a>
-            <a class="btn" href="Basit_Iqbal_Bitto_CV1.pdf" download>Download My CV</a>
+            <a class="btn" href="cv.pdf" download>Download My CV</a>
         </div>
     </div>
 </body>
+<!-- Chatbase Script (unchanged) -->
+<script>
+    (function () {
+      if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...arguments) => {
+          if (!window.chatbase.q) {
+            window.chatbase.q = [];
+          }
+          window.chatbase.q.push(arguments);
+        };
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") {
+              return target.q;
+            }
+            return (...args) => target(prop, ...args);
+          },
+        });
+      }
+      const onLoad = function () {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "5hSyhEFGKExTKNbgJ1EXA";
+        script.domain = "www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+</script>
 </html>
