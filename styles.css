@@ -13,7 +13,11 @@
             min-height: 100vh;
             position: relative;
         }
-        
+
+        html {
+          scroll-behavior: smooth;
+        }
+
         /* Navigation */
         .top-nav {
             position: fixed;
