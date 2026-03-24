@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Iqbal Bitto Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; line-height: 1.5; color: #333; background: #f4f4f4; }
+        
+        .container { display: flex; width: 210mm; min-height: 297mm; margin: 20px auto; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
+        /* Left Column */
+        .left-col { width: 62%; padding: 50px 45px; }
+        .name-header { font-size: 42px; font-weight: 800; color: #345974; line-height: 0.9; margin-bottom: 30px; text-transform: uppercase; border-bottom: 2px solid #b0c4de; padding-bottom: 15px; }
+        
+        /* Increased section gap */
+        section { margin-top: 40px; } 
+        h2 { font-size: 18px; color: #345974; text-transform: uppercase; border-bottom: 2px solid #345974; padding-bottom: 5px; margin-bottom: 18px; font-weight: 700; letter-spacing: 1px;}
+        
+        /* Increased item gaps */
+        .edu-item, .exp-item { margin-bottom: 22px; }
+        .title-bold { font-weight: 700; font-size: 14.5px; margin-bottom: 2px; }
+        .sub-text { font-size: 12px; color: #666; margin-bottom: 5px; }
+        .desc-text { font-size: 12px; margin-top: 6px; text-align: justify; color: #444;}
+        
+        .bullet-list { list-style: none; padding-left: 10px; margin-top: 8px; }
+        .bullet-list li { font-size: 12px; margin-bottom: 6px; position: relative; padding-left: 15px; }
+        .bullet-list li::before { content: "•"; position: absolute; left: 0; font-weight: bold; color: #345974; }
+        
+        .cert-link { color: #000; text-decoration: underline; font-style: italic; font-weight: 600; font-size: 12.5px; display: inline-block; margin-bottom: 5px;}
+
+        /* Right Column (Sidebar) */
+        .right-col { width: 38%; background-color: #345974; color: white; padding: 50px 25px; }
+        
+        .profile-box { width: 145px; height: 145px; background: white; margin: 0 auto 40px; border-radius: 4px; overflow: hidden; border: 4px solid white; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .profile-box img { width: 100%; height: 100%; object-fit: cover; }
+
+        .contact-info { margin-bottom: 45px; padding-left: 5px; font-size: 11.5px; }
+        .contact-item { display: flex; align-items: center; margin-bottom: 16px; gap: 12px; }
+        .contact-item i { background: white; color: #345974; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; }
+        .contact-item a, .contact-item span { color: white; text-decoration: none; word-break: break-all; }
+
+        .sidebar-section { margin-bottom: 40px; }
+        .sidebar-section h3 { font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.4); padding-bottom: 6px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .skill-group { margin-bottom: 18px; }
+        .skill-header { font-size: 13px; font-weight: 700; display: block; }
+        .skill-desc { font-size: 11px; color: #d0dae1; display: block; line-height: 1.3; margin-top: 3px; }
+
+        .lang-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+        .lang-name { font-size: 12.5px; font-weight: 600; }
+        .lang-bar { display: flex; gap: 4px; }
+        .bar-segment { width: 22px; height: 7px; background: rgba(255,255,255,0.2); border-radius: 1px; }
+        .bar-segment.filled { background: white; }
+
+        @media print {
+            body { background: white; -webkit-print-color-adjust: exact; }
+            .container { box-shadow: none; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left-col">
+        <h1 class="name-header">BASIT IQBAL<br>BITTO</h1>
+
+        <section>
+            <h2>EDUCATION</h2>
+            <div class="edu-item">
+                <div class="title-bold">SSC, Science, 2025</div>
+                <div class="sub-text">Manirampur Govt. Secondary School - Manirampur, Bangladesh</div>
+            </div>
+            <div class="edu-item">
+                <div class="title-bold">HSC, Science, 2027</div>
+                <div class="sub-text">Manirampur College - Manirampur, Bangladesh</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>PROFESSIONAL SUMMARY</h2>
+            <p class="desc-text">Innovative web designer and creative editor with extensive experience in utilizing AI tools to streamline production. Skilled in crafting responsive layouts, high-retention video content, and branding assets. Eager to contribute technical expertise and creative vision to impactful digital projects.</p>
+        </section>
+
+        <section>
+            <h2>EXPERIENCE</h2>
+            <div class="exp-item">
+                <div class="title-bold">Video Editor</div>
+                <div class="sub-text">Remote</div>
+                <p class="desc-text">Produced high-quality video edits that significantly improved audience retention on YouTube. Enhanced overall content appeal through strategic editing and creative input.</p>
+            </div>
+            <div class="exp-item">
+                <div class="title-bold">Web Designer</div>
+                <div class="sub-text">Remote</div>
+                <p class="desc-text">Designed and implemented user-friendly interfaces to enhance website functionality and user experience.</p>
+
+            </div>
+            <div class="exp-item">
+                <div class="title-bold">Project Engineer</div>
+                <div class="sub-text">Remote</div>
+                <p class="desc-text">Assisted in utilizing various AI tools to create high-quality images, videos, music, and websites. Supported projects by generating content rapidly with AI technology.</p>
+            </div>
+            <div class="exp-item">
+                <div class="title-bold">Graphic Designer</div>
+                <div class="sub-text">Remote</div>
+                <p class="desc-text">Assisted in creating various graphic designs, including logos. Contributed to design projects by providing creative input and feedback.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>CERTIFICATIONS</h2>
+            <ul class="bullet-list">
+                <li><a href="http://freecodecamp.org/certification/bitto29/responsive-web-design" class="cert-link">Responsive Web Design</a></li>
+                <li><a href="https://simpli-web.app.link/e/cijPElyXOTb" class="cert-link">Prompt Engineering Fundamentals</a></li>
+                <li><a href="https://www.mindluster.com/student/certificate/dc538e77" class="cert-link">Logo Design</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-col">
+        <div class="profile-box">
+            <img src="https://bitto29.github.io/cv1/Profilepic.jpg" alt="Basit Iqbal Bitto">
+        </div>
+
+        <div class="contact-info">
+            
+            <div class="contact-item">
+                <i class="fas fa-link"></i>
+                <a href="https://bitto.pages.dev/">Portfolio</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-facebook"></i>
+                <a href="https://facebook.com/bitto29">Facebook</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/basit.iqbal.bitto">Instagram</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/bitto29">Linkedin</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-location-dot"></i>
+                <span>Manirampur, 7440 BD</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info.bitto29@gmail.com">info.bitto29@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>SKILLS</h3>
+            <div class="skill-group">
+                <span class="skill-header">Web Development</span>
+                <span class="skill-desc">Front end development with modern technologies</span>
+            </div>
+            <div class="skill-group">
+                <span class="skill-header">AI & ML</span>
+                <span class="skill-desc">Building intelligent solutions with AI</span>
+            </div>
+            <div class="skill-group">
+                <span class="skill-header">Graphic Design</span>
+                <span class="skill-desc">Creating visually stunning designs and branding solutions</span>
+            </div>
+            <div class="skill-group">
+                <span class="skill-header">Video Editing</span>
+                <span class="skill-desc">Creating professional and engaging video content</span>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>LANGUAGES</h3>
+            <div class="lang-row">
+                <span class="lang-name">Bengali</span>
+                <div class="lang-bar">
+                    <div class="bar-segment filled"></div><div class="bar-segment filled"></div><div class="bar-segment filled"></div><div class="bar-segment filled"></div><div class="bar-segment filled"></div>
+                </div>
+            </div>
+            <div class="lang-row">
+                <span class="lang-name">English</span>
+                <div class="lang-bar">
+                    <div class="bar-segment filled"></div><div class="bar-segment filled"></div><div
+                        class="bar-segment filled"></div><div
+                        class="bar-segment filled"></div><div class="bar-segment"></div>
+                </div>
+            </div>
+            <div class="lang-row">
+                <span class="lang-name">Hindi</span>
+                <div class="lang-bar">
+                    <div class="bar-segment filled"></div><div class="bar-segment filled"></div><div class="bar-segment"></div><div class="bar-segment"></div><div class="bar-segment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
